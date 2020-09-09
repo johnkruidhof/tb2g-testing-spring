@@ -5,8 +5,11 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
-@Profile("externalized")
+/**
+ * Created by jt on 2019-02-18.
+ */
 @Component
+@Profile({"externalized", "laurel-properties"})
 @Primary
 public class PropertiesWordProducer implements WordProducer {
 
@@ -21,5 +24,4 @@ public class PropertiesWordProducer implements WordProducer {
     public String getWord() {
         return word;
     }
-
 }
