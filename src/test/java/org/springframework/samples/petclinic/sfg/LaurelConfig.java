@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Profile;
 public class LaurelConfig {
 
     @Bean
-    LaurelWordProducer laurelWordProducer(){
+    LaurelWordProducer laurelWordProducer() {
         return new LaurelWordProducer();
     }
 }

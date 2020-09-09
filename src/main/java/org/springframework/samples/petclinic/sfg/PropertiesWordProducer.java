@@ -5,11 +5,8 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
-/**
- * Created by jt on 2019-02-18.
- */
-@Component
 @Profile("externalized")
+@Component
 @Primary
 public class PropertiesWordProducer implements WordProducer {
 
@@ -24,4 +21,5 @@ public class PropertiesWordProducer implements WordProducer {
     public String getWord() {
         return word;
     }
+
 }

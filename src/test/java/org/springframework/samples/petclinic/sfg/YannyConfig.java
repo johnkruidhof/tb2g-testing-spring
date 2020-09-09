@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Profile;
 public class YannyConfig {
 
     @Bean
-    YannyWordProducer yannyWordProducer(){
+    YannyWordProducer yannyWordProducer() {
         return new YannyWordProducer();
     }
 }

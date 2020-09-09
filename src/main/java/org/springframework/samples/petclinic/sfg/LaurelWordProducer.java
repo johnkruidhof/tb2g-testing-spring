@@ -2,13 +2,13 @@ package org.springframework.samples.petclinic.sfg;
 
 import org.springframework.stereotype.Component;
 
-/**
- * Created by jt on 2019-02-16.
- */
 @Component
 public class LaurelWordProducer implements WordProducer {
+
+    public static final String LAUREL = "Laurel";
+
     @Override
     public String getWord() {
-        return "Laurel";
+        return LAUREL;
     }
 }
